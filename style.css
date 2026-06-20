@@ -111,6 +111,19 @@ h1,h2,h3{ font-family: var(--serif); font-weight: 500; margin: 0; color: var(--p
 @keyframes pulse{ 0%,100%{ r: 4.5; opacity: 1; } 50%{ r: 6.5; opacity: .6; } }
 
 .hero-content{ position: relative; z-index: 1; max-width: 720px; }
+.hero-portrait{
+  width: 64px !important;
+  height: 64px !important;
+  max-width: 64px;
+  max-height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 2px solid var(--ember);
+  margin-bottom: 22px;
+  display: block;
+  flex-shrink: 0;
+}
 .eyebrow{
   font-family: var(--mono); font-size: 13px; color: var(--ember);
   letter-spacing: .12em; text-transform: uppercase; margin: 0 0 18px;
@@ -245,6 +258,11 @@ section + section, .research, .projects, .split, .talks{ border-top: 1px solid v
 .hobbies-text{
   font-family: var(--serif); font-weight: 300; font-size: 19px; line-height: 1.6;
   color: var(--paper);
+}
+.hobbies-photo{
+  width: 100%; max-width: 360px; border-radius: 6px;
+  margin-top: 28px; display: block;
+  border: 1px solid var(--hairline);
 }
 
 @media (max-width: 800px){
