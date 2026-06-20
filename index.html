@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raya Dastidar — Astrophysicist</title>
+<meta name="description" content="Raya Dastidar — Astrophysicist and researcher specializing in supernovae.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="site-header">
+  <a class="wordmark" href="#top">R.D.</a>
+  <nav>
+    <a href="#research">Research</a>
+    <a href="#projects">Projects</a>
+    <a href="#service">Service</a>
+    <a href="#talks">Talks</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <svg class="hero-curve" viewBox="0 0 1200 420" preserveAspectRatio="none" aria-hidden="true">
+      <defs>
+        <linearGradient id="curveFill" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#E8703A" stop-opacity="0.30"/>
+          <stop offset="100%" stop-color="#E8703A" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <!-- rapid rise to peak, exponential-ish decay: shape of a SN II light curve -->
+      <path class="curve-fill" d="M -10,400 L 40,398 L 90,392 L 130,360 L 160,260 L 185,120 L 205,55 L 225,40
+        C 320,75 420,150 520,195
+        C 650,250 800,280 950,300
+        C 1050,312 1150,322 1230,330
+        L 1230,420 L -10,420 Z" fill="url(#curveFill)"/>
+      <path class="curve-line" d="M -10,400 L 40,398 L 90,392 L 130,360 L 160,260 L 185,120 L 205,55 L 225,40
+        C 320,75 420,150 520,195
+        C 650,250 800,280 950,300
+        C 1050,312 1150,322 1230,330"
+        fill="none" stroke="#E8703A" stroke-width="2.5"/>
+      <circle class="curve-peak" cx="225" cy="40" r="4.5" fill="#F2EFE9"/>
+    </svg>
+
+    <div class="hero-content">
+      <p class="eyebrow">λ — observational astrophysics</p>
+      <h1>Raya<br>Dastidar</h1>
+      <p class="hero-role">Astrophysicist &amp; researcher specializing in supernovae</p>
+      <p class="hero-sub">Postdoctoral fellow, INAF — Brera Observatory · SOXS team</p>
+      <div class="hero-links">
+        <a class="btn" href="https://drive.google.com/file/d/1B48BjqgCyQfzg5C1dlM6FmE9s7qUeUPr/view?usp=sharing" target="_blank" rel="noopener">Curriculum Vitae</a>
+        <a class="btn btn-ghost" href="https://ui.adsabs.harvard.edu/public-libraries/7c5iSx4QS4WpODvcJuLoVA" target="_blank" rel="noopener">Publications</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="intro">
+    <p>I am an observational astrophysicist and currently a postdoctoral fellow at the
+    <strong>Istituto Nazionale di Astrofisica — Brera Observatory</strong>, where I'm part of the
+    <a href="http://www.brera.inaf.it/?page=soxs-site;ritorno=soxs;lingua=inglese;" target="_blank" rel="noopener">SOXS team</a>.
+    My research focuses on unravelling the mysteries of stellar explosions through the capture and
+    analysis of their light curves and spectra. Formerly, I was a FONDECYT postdoctoral fellow in Chile,
+    home to some of the world's most powerful telescopes.</p>
+  </section>
+
+  <!-- RESEARCH -->
+  <section id="research" class="research">
+    <div class="section-head">
+      <span class="tick">6563 Å</span>
+      <h2>Research Interests</h2>
+    </div>
+    <div class="research-grid">
+      <div class="research-text">
+        <p>My primary research focus is on supernovae, particularly the progenitors and environments
+        of these stellar explosions. I have a specific interest in hydrogen-rich Type&nbsp;II supernovae,
+        ejecta–circumstellar medium interactions, and the metallicity of supernova ejecta and their
+        environments. My work combines analytical and hydrodynamical modelling of light curves with
+        spectral modelling, aiming to better understand their underlying physics and evolutionary
+        pathways.</p>
+        <p>During my PhD, I focused primarily on characterising supernovae through detailed observational
+        analysis. In recent years, I have developed a strong interest in simulating light curves and
+        spectra, which offers deeper insight into these cosmic events. I use open-source codes such as
+        <a href="https://stellarcollapse.org/index.php/SNEC.html" target="_blank" rel="noopener">SNEC</a>,
+        <a href="https://tardis-sn.github.io/" target="_blank" rel="noopener">TARDIS</a>, and
+        <a href="https://docs.mesastar.org/en/24.08.1/" target="_blank" rel="noopener">MESA</a> to model
+        the physical processes behind supernovae, and I use their photometric and spectroscopic data to
+        measure distances to host galaxies.</p>
+      </div>
+      <div class="research-figure">
+        <div class="figure-frame">
+          <svg viewBox="0 0 320 320" aria-hidden="true">
+            <circle cx="160" cy="160" r="2" fill="#F2EFE9"/>
+            <circle class="ring" cx="160" cy="160" r="40" fill="none" stroke="#5B7A9D" stroke-width="1" opacity="0.5"/>
+            <circle class="ring" cx="160" cy="160" r="75" fill="none" stroke="#5B7A9D" stroke-width="1" opacity="0.35"/>
+            <circle class="ring" cx="160" cy="160" r="115" fill="none" stroke="#E8703A" stroke-width="1.5" opacity="0.6"/>
+            <circle class="ring" cx="160" cy="160" r="150" fill="none" stroke="#5B7A9D" stroke-width="1" opacity="0.2"/>
+          </svg>
+          <span class="figure-cap">ejecta–CSM interaction, schematic</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects">
+    <div class="section-head">
+      <span class="tick">4861 Å</span>
+      <h2>Recent Projects</h2>
+    </div>
+
+    <article class="paper">
+      <div class="paper-fig">
+        <svg viewBox="0 0 200 140" aria-hidden="true">
+          <polyline points="10,120 35,90 55,40 75,20 95,35 120,55 145,72 170,85 190,92" fill="none" stroke="#E8703A" stroke-width="2"/>
+          <polyline points="10,128 35,110 55,75 75,55 95,62 120,80 145,92 170,100 190,105" fill="none" stroke="#5B7A9D" stroke-width="1.5" stroke-dasharray="3 3"/>
+        </svg>
+      </div>
+      <div class="paper-body">
+        <h3>SN 2019nyk: a rapidly declining Type&nbsp;II supernova with early interaction signatures</h3>
+        <p class="paper-cite">R. Dastidar, G. Pignata et al. · A&amp;A, 685, A44 (2024)</p>
+        <p>Early spectra of SN&nbsp;2019nyk exhibit high-ionisation emission features and narrow H Balmer
+        lines persisting until 4.1&nbsp;days after explosion, indicating circumstellar material (CSM) in
+        close proximity. Comparison with literature models indicates a mass-loss rate of
+        10⁻³&nbsp;M☉&nbsp;yr⁻¹. A discrepancy between the CSM density derived from spectral comparisons and
+        that from SNEC hydrodynamical modelling could be resolved by a low-density shell above the
+        high-density CSM inferred from the modelling.</p>
+      </div>
+    </article>
+
+    <article class="paper alt">
+      <div class="paper-fig">
+        <svg viewBox="0 0 200 140" aria-hidden="true">
+          <line x1="20" y1="110" x2="160" y2="40" stroke="#5B7A9D" stroke-width="1.5"/>
+          <circle cx="35" cy="103" r="3" fill="#E8703A"/>
+          <circle cx="70" cy="86" r="3" fill="#E8703A"/>
+          <circle cx="105" cy="68" r="3" fill="#E8703A"/>
+          <circle cx="140" cy="52" r="3" fill="#E8703A"/>
+        </svg>
+      </div>
+      <div class="paper-body">
+        <h3>SN 2018is: a low-luminosity Type&nbsp;IIP supernova with narrow hydrogen emission lines at early phases</h3>
+        <p class="paper-cite">R. Dastidar, K. Misra et al. · A&amp;A, 694, A260 (2025)</p>
+        <p>SN&nbsp;2018is contributes to the diversity within the low-luminosity Type&nbsp;II population,
+        with an atypically steep photospheric decline and remarkably narrow early emission lines. We used
+        the expanding photosphere method (EPM) to obtain a redshift-independent distance to its host
+        galaxy from early photometric and spectroscopic data — fitting t vs.&nbsp;θ/v<sub>ph</sub> for the
+        {BV}, {BVI} and {VI} filter combinations to determine the explosion epoch and distance from the
+        intercept and slope.</p>
+      </div>
+    </article>
+
+    <article class="paper">
+      <div class="paper-fig">
+        <svg viewBox="0 0 200 140" aria-hidden="true">
+          <polyline points="10,30 30,28 45,20 60,15 70,60 85,95 105,108 130,115 160,118 190,120" fill="none" stroke="#E8703A" stroke-width="2"/>
+        </svg>
+      </div>
+      <div class="paper-body">
+        <h3>The fast rise of the unusual Type IIL/IIb SN&nbsp;2018ivc</h3>
+        <p class="paper-cite">A. Reguitti, R. Dastidar et al. · A&amp;A, 692, A26 (2024)</p>
+        <p>High-cadence data show the SN rising by nearly three magnitudes in five hours
+        (18&nbsp;mag&nbsp;d⁻¹). Comparing light curves and late spectra to Type&nbsp;IIL and IIb events
+        revealed traits of both, suggesting SN&nbsp;2018ivc is transitional between the two families.
+        Early light-curve modelling with SNEC indicated a stripped progenitor with a hydrogen-envelope
+        mass of 0.74&nbsp;M☉ — also intermediate between IIb and IIL progenitors.</p>
+      </div>
+    </article>
+
+    <article class="paper alt">
+      <div class="paper-fig">
+        <svg viewBox="0 0 200 140" aria-hidden="true">
+          <path d="M20,70 Q60,30 100,70 Q140,110 180,70" fill="none" stroke="#5B7A9D" stroke-width="1.5"/>
+          <path d="M20,70 Q60,50 100,70 Q140,90 180,70" fill="none" stroke="#E8703A" stroke-width="2"/>
+        </svg>
+      </div>
+      <div class="paper-body">
+        <h3>Signatures of shock interaction as an additional power source in the nebular spectra of SN&nbsp;2023ixf</h3>
+        <p class="paper-cite">A. Kumar, R. Dastidar et al. · MNRAS, 538, 659 (2025)</p>
+        <p>We analysed the nebular spectrum of SN&nbsp;2023ixf at +363&nbsp;d, taken with the WEAVE
+        instrument on the 4.2&nbsp;m William Herschel Telescope. The complex Hα profile — a hallmark of
+        ongoing ejecta–CSM interaction — decomposes into three Gaussian components near the line centre
+        and two broader components peaking at ±5650&nbsp;km&nbsp;s⁻¹, indicating interaction with CSM
+        expelled 350–640&nbsp;years before explosion. The slanted (rather than boxy) profile wings suggest
+        a comparatively low-density CSM around SN&nbsp;2023ixf.</p>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- SERVICE + HOBBIES -->
+  <section id="service" class="split">
+    <div class="split-col">
+      <div class="section-head">
+        <span class="tick">3934 Å</span>
+        <h2>Scientific Community Work</h2>
+      </div>
+      <ol class="service-list">
+        <li>Scientific referee, A&amp;A and MNRAS.</li>
+        <li>Member of the Extragalactic Panel, Comité Nacional de Asignación de Tiempo de Telescopio (CNTAC), Chile, 2023–2025.</li>
+        <li>Proposal referee for the 3.6 m DOT and uGMRT, India.</li>
+        <li>Member of the 12-person Science Assessor panel of the Thai National Observatory, 2024.</li>
+        <li>Member of the 'Talk Team', organising weekly seminars at Universidad Andrés Bello, 2022–2024.</li>
+        <li>Master's thesis committee member for Joaquín Alfredo Silva Beyer, PUC, defended July 2024.</li>
+        <li>Co-supervision of UG/PG students, 2018–2021: Moulikta Sanjeev (Bollenbach Lab, University of Cologne), Shruti Agarwal (PhD scholar, University of Tennessee, Knoxville), Vasudev Mittal (BS-MS, IISER Mohali), Darshana Mehta (PhD student, UC Davis).</li>
+        <li>Mentor at the ARIES Training School in Observational Astronomy (ATSOA), Nainital, India, 2016–2019.</li>
+      </ol>
+    </div>
+    <div class="split-col">
+      <div class="section-head">
+        <span class="tick">5890 Å</span>
+        <h2>Hobbies</h2>
+      </div>
+      <p class="hobbies-text">I'm a Bengali from Kolkata, India — but unlike many other Bengalis,
+      gifted in music and art, I lack those talents. Instead I channel my creativity into sleeping
+      during the day (remember, I'm an astronomer!), watching the sky (which has led to a few
+      accidents), experimenting in the kitchen, capturing nature through photography, tending to my
+      plants, and — most importantly — indulging in the joy of eating.</p>
+    </div>
+  </section>
+
+  <!-- TALKS -->
+  <section id="talks" class="talks">
+    <div class="section-head">
+      <span class="tick">8498 Å</span>
+      <h2>Conferences &amp; Colloquiums</h2>
+    </div>
+    <ul class="talks-list">
+      <li>
+        <span class="talk-date">Apr 2025</span>
+        <span class="talk-title">An extraordinary journey into the transient sky — Padova, Italy</span>
+        <span class="talk-links">
+          <a href="https://www.memsait.it/videomemorie/volume-2-2025/VIDEOMEM_2_2025.32.mp4" target="_blank" rel="noopener">link</a> ·
+          <a href="https://www.memsait.it/videomemorie/volume-2-2025/VIDEOMEM_2_2025.44.mp4" target="_blank" rel="noopener">link</a>
+        </span>
+      </li>
+      <li>
+        <span class="talk-date">Apr 2025</span>
+        <span class="talk-title">VLT, Supernovae, Bruno @65 &amp; H₀ @? — ESO Garching, Germany</span>
+        <span class="talk-links"><a href="https://zenodo.org/records/15765551" target="_blank" rel="noopener">link</a></span>
+      </li>
+      <li>
+        <span class="talk-date">May 2025</span>
+        <span class="talk-title">Invited talk, Adelina Colloquium Series — ESO Vitacura, Santiago, Chile</span>
+        <span class="talk-links"><a href="https://www.eso.org/sci/meetings/santiago/adelina-seminar-series/programme2025/raya.html" target="_blank" rel="noopener">abstract</a></span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- CONTACT / FOOTER -->
+  <footer id="contact" class="site-footer">
+    <div class="footer-main">
+      <h2>Get in touch</h2>
+      <p class="footer-email">raya.dastidar <span class="at">at</span> inaf <span class="at">dot</span> it</p>
+      <p class="footer-email">rdastidr <span class="at">at</span> gmail <span class="at">dot</span> com</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://orcid.org/0000-0001-6191-7160" target="_blank" rel="noopener">ORCID</a>
+      <a href="https://scholar.google.com/citations?hl=en&user=OA0kiEcAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+      <a href="https://arxiv.org/search/?query=Dastidar%2C+Raya&searchtype=all&source=header" target="_blank" rel="noopener">arXiv</a>
+      <a href="https://www.webofscience.com/wos/author/record/AGF-7560-2022" target="_blank" rel="noopener">Web of Science</a>
+      <a href="https://www.scopus.com/authid/detail.uri?authorId=57200917590" target="_blank" rel="noopener">Scopus</a>
+    </div>
+    <p class="footer-copy">© Raya Dastidar. All rights reserved.</p>
+  </footer>
+
+</main>
+
+</body>
+</html>
