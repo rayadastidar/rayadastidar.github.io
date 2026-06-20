@@ -17,8 +17,8 @@
   --sans:  'Inter', system-ui, -apple-system, sans-serif;
   --mono:  'IBM Plex Mono', 'SF Mono', monospace;
 
-  --max: 1400px;
-  --pad: clamp(20px, 4vw, 56px);
+  --max: 100%;
+  --pad: clamp(20px, 5vw, 120px);
 }
 
 *{ box-sizing: border-box; }
