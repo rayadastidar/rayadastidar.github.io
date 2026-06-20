@@ -118,12 +118,12 @@ h1,h2,h3{ font-family: var(--serif); font-weight: 500; margin: 0; color: var(--p
   margin-bottom: 20px;
 }
 .hero-portrait{
-  width: clamp(96px, 11vw, 160px) !important;
-  height: clamp(96px, 11vw, 160px) !important;
+  width: clamp(120px, 14vw, 200px) !important;
+  height: clamp(120px, 14vw, 200px) !important;
   border-radius: 50%;
   object-fit: cover;
   object-position: 50% 30%;
-  border: 2px solid var(--ember);
+  border: 3px solid var(--ember);
   display: block;
   flex-shrink: 0;
 }
