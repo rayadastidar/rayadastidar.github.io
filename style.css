@@ -228,16 +228,21 @@ section + section, .research, .projects, .split, .talks{ border-top: 1px solid v
    Projects (paper cards)
    ============================================================ */
 .paper{
-  display: grid; grid-template-columns: 200px 1fr; gap: 36px;
+  display: grid; grid-template-columns: 240px 1fr; gap: 36px;
   padding: 36px 0; border-top: 1px solid var(--hairline);
 }
 .paper:first-of-type{ border-top: none; padding-top: 0; }
 .paper.alt .paper-fig{ background: var(--surface-2); }
 .paper-fig{
   background: var(--surface); border: 1px solid var(--hairline); border-radius: 6px;
-  padding: 18px; display: flex; align-items: center; height: fit-content;
+  padding: 10px; display: flex; align-items: center; height: fit-content;
 }
 .paper-fig svg{ width: 100%; height: auto; }
+.paper-fig img{
+  width: 100%; height: auto; display: block;
+  border-radius: 3px;
+  background: #fff;
+}
 .paper-body h3{ font-size: 20px; line-height: 1.3; margin-bottom: 10px; max-width: 60ch; }
 .paper-cite{
   font-family: var(--mono); font-size: 12.5px; color: var(--ember);
