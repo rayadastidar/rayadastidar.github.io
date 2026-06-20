@@ -111,16 +111,19 @@ h1,h2,h3{ font-family: var(--serif); font-weight: 500; margin: 0; color: var(--p
 @keyframes pulse{ 0%,100%{ r: 4.5; opacity: 1; } 50%{ r: 6.5; opacity: .6; } }
 
 .hero-content{ position: relative; z-index: 1; max-width: 720px; }
+.hero-name-row{
+  display: flex;
+  align-items: center;
+  gap: clamp(18px, 3vw, 36px);
+  margin-bottom: 20px;
+}
 .hero-portrait{
-  width: 64px !important;
-  height: 64px !important;
-  max-width: 64px;
-  max-height: 64px;
+  width: clamp(96px, 11vw, 160px) !important;
+  height: clamp(96px, 11vw, 160px) !important;
   border-radius: 50%;
   object-fit: cover;
   object-position: 50% 30%;
   border: 2px solid var(--ember);
-  margin-bottom: 22px;
   display: block;
   flex-shrink: 0;
 }
@@ -321,4 +324,5 @@ section + section, .research, .projects, .split, .talks{ border-top: 1px solid v
 @media (max-width: 640px){
   section{ padding: 64px var(--pad); }
   .hero{ min-height: 80vh; align-items: center; }
+  .hero-name-row{ flex-direction: column; align-items: flex-start; gap: 14px; }
 }
