@@ -29,8 +29,8 @@ body{
   background: var(--ink);
   color: var(--paper);
   font-family: var(--sans);
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 18px;
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -199,7 +199,7 @@ section + section, .research, .projects, .split, .talks{ border-top: 1px solid v
    Research
    ============================================================ */
 .research-grid{
-  display: grid; grid-template-columns: 1.5fr 1fr; gap: 56px; align-items: start;
+  display: grid; grid-template-columns: 1.5fr 1fr; gap: 56px; align-items: stretch;
 }
 .research-text p{ margin: 0 0 20px; color: var(--paper); }
 .research-text p:last-child{ margin-bottom: 0; }
@@ -207,11 +207,13 @@ section + section, .research, .projects, .split, .talks{ border-top: 1px solid v
 
 .figure-frame{
   background: var(--surface); border: 1px solid var(--hairline); border-radius: 6px;
-  padding: 10px; display: flex; flex-direction: column; align-items: center; gap: 12px;
+  padding: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px;
+  height: 100%;
 }
 .figure-frame svg{ width: 100%; max-width: 220px; margin: 18px 0; }
 .figure-photo{
-  width: 100%; border-radius: 4px; display: block;
+  width: 100%; flex: 1; min-height: 0; object-fit: contain;
+  border-radius: 4px; display: block;
 }
 .ring{ animation: spin 60s linear infinite; transform-origin: 160px 160px; }
 @keyframes spin{ to{ transform: rotate(360deg); } }
@@ -222,37 +224,43 @@ section + section, .research, .projects, .split, .talks{ border-top: 1px solid v
 
 @media (max-width: 800px){
   .research-grid{ grid-template-columns: 1fr; }
+  .figure-frame{ height: auto; }
+  .figure-photo{ flex: none; }
 }
 
 /* ============================================================
    Projects (paper cards)
    ============================================================ */
 .paper{
-  display: grid; grid-template-columns: 240px 1fr; gap: 36px;
-  padding: 36px 0; border-top: 1px solid var(--hairline);
+  display: grid; grid-template-columns: 320px 1fr; gap: 40px;
+  padding: 40px 0; border-top: 1px solid var(--hairline);
+  align-items: stretch;
 }
 .paper:first-of-type{ border-top: none; padding-top: 0; }
 .paper.alt .paper-fig{ background: var(--surface-2); }
 .paper-fig{
   background: var(--surface); border: 1px solid var(--hairline); border-radius: 6px;
-  padding: 10px; display: flex; align-items: center; height: fit-content;
+  padding: 10px; display: flex; align-items: center; justify-content: center;
+  height: 100%;
 }
 .paper-fig svg{ width: 100%; height: auto; }
 .paper-fig img{
-  width: 100%; height: auto; display: block;
+  width: 100%; height: 100%; display: block;
   border-radius: 3px;
   background: #fff;
+  object-fit: contain;
 }
-.paper-body h3{ font-size: 20px; line-height: 1.3; margin-bottom: 10px; max-width: 60ch; }
+.paper-body h3{ font-size: 23px; line-height: 1.3; margin-bottom: 10px; max-width: 60ch; }
 .paper-cite{
-  font-family: var(--mono); font-size: 12.5px; color: var(--ember);
+  font-family: var(--mono); font-size: 13.5px; color: var(--ember);
   margin: 0 0 14px; letter-spacing: .01em;
 }
-.paper-body p:not(.paper-cite){ color: var(--paper-dim); font-size: 15px; max-width: 64ch; }
+.paper-body p:not(.paper-cite){ color: var(--paper-dim); font-size: 17px; max-width: 64ch; }
 
 @media (max-width: 700px){
   .paper{ grid-template-columns: 1fr; }
-  .paper-fig{ max-width: 160px; }
+  .paper-fig{ max-width: 280px; height: auto; }
+  .paper-fig img{ height: auto; }
 }
 
 /* ============================================================
@@ -262,7 +270,7 @@ section + section, .research, .projects, .split, .talks{ border-top: 1px solid v
   display: grid; grid-template-columns: 1.1fr .9fr; gap: 64px;
 }
 .service-list{
-  margin: 0; padding-left: 22px; color: var(--paper-dim); font-size: 15px;
+  margin: 0; padding-left: 22px; color: var(--paper-dim); font-size: 17px;
 }
 .service-list li{ margin-bottom: 14px; line-height: 1.55; }
 .service-list li::marker{ color: var(--ember); font-family: var(--mono); }
@@ -291,7 +299,7 @@ section + section, .research, .projects, .split, .talks{ border-top: 1px solid v
 }
 .talks-list li:first-child{ border-top: none; }
 .talk-date{ font-family: var(--mono); font-size: 13px; color: var(--csm-blue); }
-.talk-title{ color: var(--paper); font-size: 15.5px; }
+.talk-title{ color: var(--paper); font-size: 17px; }
 .talk-links{ font-family: var(--mono); font-size: 13px; white-space: nowrap; }
 .talk-links a{ border-bottom: 1px solid var(--ember-dim); }
 
