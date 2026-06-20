@@ -118,7 +118,7 @@ h1,h2,h3{ font-family: var(--serif); font-weight: 500; margin: 0; color: var(--p
   max-height: 64px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center top;
+  object-position: 50% 30%;
   border: 2px solid var(--ember);
   margin-bottom: 22px;
   display: block;
