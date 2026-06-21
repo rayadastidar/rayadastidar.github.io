@@ -213,7 +213,7 @@ section + section, .research, .projects, .split, .talks{ border-top: 1px solid v
 }
 .figure-frame svg{ width: 100%; max-width: 220px; margin: 18px 0; }
 .figure-photo{
-  width: 100%; max-width: 260px; object-fit: contain;
+  width: 100%; max-width: 340px; object-fit: contain;
   border-radius: 4px; display: block;
 }
 .ring{ animation: spin 60s linear infinite; transform-origin: 160px 160px; }
