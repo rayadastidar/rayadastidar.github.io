@@ -287,18 +287,18 @@ section + section, .research, .projects, .service-section, .talks, .hobbies-sect
   display: grid; grid-template-columns: 1fr 1.2fr; gap: 56px; align-items: center;
 }
 .hobbies-text{
-  font-family: var(--serif); font-weight: 300; font-size: 37.8px; line-height: 1.6;
+  font-family: var(--serif); font-weight: 300; font-size: 30.2px; line-height: 1.6;
   color: var(--paper);
 }
 .hobbies-photo{
-  width: 100%; border-radius: 6px;
+  width: 100%; max-width: 420px; border-radius: 6px;
   display: block;
   border: 1px solid var(--hairline);
 }
 
 @media (max-width: 800px){
   .hobbies-grid{ grid-template-columns: 1fr; }
-  .hobbies-photo{ max-width: 480px; }
+  .hobbies-photo{ max-width: 340px; }
 }
 
 .hobbies-photo-grid{
