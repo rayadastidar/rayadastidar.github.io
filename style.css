@@ -96,7 +96,14 @@ h1,h2,h3{ font-family: var(--serif); font-weight: 500; margin: 0; color: var(--p
   border-bottom: 1px solid var(--hairline);
 }
 
-.hero-content{ padding: clamp(40px, 6vh, 72px) var(--pad); max-width: 880px; }
+.hero-content{
+  padding: clamp(40px, 6vh, 72px) var(--pad);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 5vw, 80px);
+  align-items: center;
+}
+.hero-main{ max-width: 520px; }
 .hero-name-row{
   display: flex;
   align-items: center;
@@ -104,8 +111,8 @@ h1,h2,h3{ font-family: var(--serif); font-weight: 500; margin: 0; color: var(--p
   margin-bottom: 20px;
 }
 .hero-portrait{
-  width: clamp(120px, 14vw, 200px) !important;
-  height: clamp(120px, 14vw, 200px) !important;
+  width: clamp(140px, 18vw, 260px) !important;
+  height: clamp(140px, 18vw, 260px) !important;
   border-radius: 50%;
   object-fit: cover;
   object-position: 50% 30%;
@@ -113,12 +120,21 @@ h1,h2,h3{ font-family: var(--serif); font-weight: 500; margin: 0; color: var(--p
   display: block;
   flex-shrink: 0;
 }
+.hero-bio{ max-width: 56ch; }
+.hero-bio p{
+  font-size: clamp(20px, 2.2vw, 23px);
+  line-height: 1.65;
+  color: var(--paper);
+  font-family: var(--serif); font-weight: 300;
+  margin: 0;
+}
+.hero-bio strong{ font-weight: 600; color: var(--paper); }
 .eyebrow{
   font-family: var(--mono); font-size: 15px; color: var(--ember);
   letter-spacing: .12em; text-transform: uppercase; margin: 0 0 18px;
 }
 .hero h1{
-  font-size: clamp(56px, 11vw, 124px);
+  font-size: clamp(44px, 7vw, 76px);
   line-height: .96;
   letter-spacing: -0.01em;
   margin-bottom: 20px;
@@ -325,7 +341,12 @@ section + section, .research, .projects, .split, .talks{ border-top: 1px solid v
 /* ============================================================
    Responsive base
    ============================================================ */
+@media (max-width: 900px){
+  .hero-content{ grid-template-columns: 1fr; gap: 36px; }
+}
+
 @media (max-width: 640px){
   section{ padding: 64px var(--pad); }
+  .hero-content{ grid-template-columns: 1fr; gap: 32px; }
   .hero-name-row{ flex-direction: column; align-items: flex-start; gap: 14px; }
 }
