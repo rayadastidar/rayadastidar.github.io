@@ -72,7 +72,7 @@ h1,h2,h3{ font-family: var(--serif); font-weight: 500; margin: 0; color: var(--p
 .wordmark:hover{ opacity: 1; border-color: var(--ember-dim); }
 .site-header nav{ display: flex; gap: clamp(14px, 2vw, 28px); }
 .site-header nav a{
-  font-family: var(--mono); font-size: 12.5px; letter-spacing: .06em; text-transform: uppercase;
+  font-family: var(--mono); font-size: 15px; letter-spacing: .06em; text-transform: uppercase;
   color: var(--paper-dim); border-bottom: none;
 }
 .site-header nav a:hover{ color: var(--ember); opacity: 1; }
@@ -128,7 +128,7 @@ h1,h2,h3{ font-family: var(--serif); font-weight: 500; margin: 0; color: var(--p
   flex-shrink: 0;
 }
 .eyebrow{
-  font-family: var(--mono); font-size: 13px; color: var(--ember);
+  font-family: var(--mono); font-size: 15px; color: var(--ember);
   letter-spacing: .12em; text-transform: uppercase; margin: 0 0 18px;
 }
 .hero h1{
@@ -144,15 +144,15 @@ h1,h2,h3{ font-family: var(--serif); font-weight: 500; margin: 0; color: var(--p
   max-width: 46ch;
 }
 .hero-sub{
-  font-family: var(--mono); font-size: 13.5px; color: var(--paper-dim);
+  font-family: var(--mono); font-size: 17px; color: var(--paper-dim);
   margin: 0 0 32px;
 }
 .hero-links{ display: flex; gap: 14px; flex-wrap: wrap; }
 
 .btn{
   display: inline-block;
-  font-family: var(--sans); font-weight: 600; font-size: 14.5px;
-  padding: 12px 22px; border-radius: 3px;
+  font-family: var(--sans); font-weight: 600; font-size: 17px;
+  padding: 13px 24px; border-radius: 3px;
   background: var(--ember); color: var(--ink);
   border-bottom: none;
 }
@@ -186,7 +186,7 @@ h1,h2,h3{ font-family: var(--serif); font-weight: 500; margin: 0; color: var(--p
   margin-bottom: 36px;
 }
 .tick{
-  font-family: var(--mono); font-size: 12px; color: var(--csm-blue);
+  font-family: var(--mono); font-size: 14px; color: var(--csm-blue);
   border-left: 2px solid var(--ember); padding-left: 10px;
   letter-spacing: .04em;
 }
@@ -295,9 +295,9 @@ section + section, .research, .projects, .split, .talks{ border-top: 1px solid v
   padding: 18px 0; border-top: 1px solid var(--hairline);
 }
 .talks-list li:first-child{ border-top: none; }
-.talk-date{ font-family: var(--mono); font-size: 13px; color: var(--csm-blue); }
+.talk-date{ font-family: var(--mono); font-size: 15px; color: var(--csm-blue); }
 .talk-title{ color: var(--paper); font-size: 19px; }
-.talk-links{ font-family: var(--mono); font-size: 13px; white-space: nowrap; }
+.talk-links{ font-family: var(--mono); font-size: 15px; white-space: nowrap; }
 .talk-links a{ border-bottom: 1px solid var(--ember-dim); }
 
 @media (max-width: 700px){
@@ -320,7 +320,7 @@ section + section, .research, .projects, .split, .talks{ border-top: 1px solid v
   display: flex; gap: 22px; flex-wrap: wrap; margin: 48px 0 40px;
 }
 .footer-links a{
-  font-family: var(--mono); font-size: 13px; text-transform: uppercase; letter-spacing: .05em;
+  font-family: var(--mono); font-size: 15px; text-transform: uppercase; letter-spacing: .05em;
   color: var(--paper-dim); border-bottom: 1px solid var(--hairline);
 }
 .footer-links a:hover{ color: var(--ember); border-color: var(--ember-dim); }
