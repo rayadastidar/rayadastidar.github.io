@@ -89,10 +89,10 @@ h1,h2,h3{ font-family: var(--serif); font-weight: 500; margin: 0; color: var(--p
 }
 .hero-banner{
   width: 100%;
-  height: clamp(280px, 48vw, 560px);
-  object-fit: cover;
-  object-position: center 35%;
+  max-height: 70vh;
+  object-fit: contain;
   display: block;
+  background: var(--ink);
   border-bottom: 1px solid var(--hairline);
 }
 
