@@ -61,8 +61,8 @@ h1,h2,h3{ font-family: var(--serif); font-weight: 500; margin: 0; color: var(--p
   position: sticky; top: 0; z-index: 20;
   display: flex; align-items: center; justify-content: space-between;
   padding: 20px var(--pad);
-  background: linear-gradient(to bottom, var(--ink) 70%, transparent);
-  backdrop-filter: blur(6px);
+  background: var(--ink);
+  border-bottom: 1px solid var(--hairline);
 }
 .wordmark{
   font-family: var(--mono); font-size: 14px; letter-spacing: .08em;
@@ -85,32 +85,18 @@ h1,h2,h3{ font-family: var(--serif); font-weight: 500; margin: 0; color: var(--p
    Hero
    ============================================================ */
 .hero{
-  position: relative;
-  min-height: 86vh;
-  display: flex; align-items: flex-end;
-  overflow: hidden;
-  padding: var(--pad);
-  padding-bottom: clamp(48px, 8vh, 96px);
+  display: flex; flex-direction: column;
 }
-.hero-curve{
-  position: absolute; inset: 0; width: 100%; height: 100%;
-  z-index: 0;
+.hero-banner{
+  width: 100%;
+  height: clamp(280px, 48vw, 560px);
+  object-fit: cover;
+  object-position: center 35%;
+  display: block;
+  border-bottom: 1px solid var(--hairline);
 }
-.curve-line{
-  stroke-dasharray: 2000;
-  stroke-dashoffset: 2000;
-  animation: draw 2.2s ease-out .2s forwards;
-}
-.curve-fill{ opacity: 0; animation: fadein 1.5s ease-out 1.1s forwards; }
-.curve-peak{
-  opacity: 0;
-  animation: fadein .6s ease-out 1.9s forwards, pulse 2.4s ease-in-out 2.5s infinite;
-}
-@keyframes draw{ to{ stroke-dashoffset: 0; } }
-@keyframes fadein{ to{ opacity: 1; } }
-@keyframes pulse{ 0%,100%{ r: 4.5; opacity: 1; } 50%{ r: 6.5; opacity: .6; } }
 
-.hero-content{ position: relative; z-index: 1; max-width: 720px; }
+.hero-content{ padding: clamp(40px, 6vh, 72px) var(--pad); max-width: 880px; }
 .hero-name-row{
   display: flex;
   align-items: center;
@@ -343,6 +329,5 @@ section + section, .research, .projects, .split, .talks{ border-top: 1px solid v
    ============================================================ */
 @media (max-width: 640px){
   section{ padding: 64px var(--pad); }
-  .hero{ min-height: 80vh; align-items: center; }
   .hero-name-row{ flex-direction: column; align-items: flex-start; gap: 14px; }
 }
