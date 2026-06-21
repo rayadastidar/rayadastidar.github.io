@@ -215,20 +215,20 @@ section + section, .research, .projects, .split, .talks{ border-top: 1px solid v
    Projects (paper cards)
    ============================================================ */
 .papers-grid{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 48px;
+  display: flex;
+  flex-direction: column;
 }
 .paper{
-  display: flex; flex-direction: column; gap: 24px;
-  padding: 0; border-top: none;
+  display: grid; grid-template-columns: 320px 1fr; gap: 40px;
+  padding: 40px 0; border-top: 1px solid var(--hairline);
+  align-items: stretch;
 }
-.paper:first-of-type{ padding-top: 0; }
+.paper:first-of-type{ border-top: none; padding-top: 0; }
 .paper.alt .paper-fig{ background: var(--surface-2); }
 .paper-fig{
   background: var(--surface); border: 1px solid var(--hairline); border-radius: 6px;
   padding: 14px; display: flex; align-items: center; justify-content: center;
-  height: 260px;
+  height: 100%;
 }
 .paper-fig svg{ width: 100%; height: auto; }
 .paper-fig img{
@@ -248,12 +248,10 @@ section + section, .research, .projects, .split, .talks{ border-top: 1px solid v
 .paper-cite a:hover{ opacity: .75; }
 .paper-body p:not(.paper-cite){ color: var(--paper-dim); font-size: 19px; max-width: 64ch; }
 
-@media (max-width: 900px){
-  .papers-grid{ grid-template-columns: 1fr; gap: 40px; }
-}
-
 @media (max-width: 700px){
-  .paper-fig{ height: auto; max-height: 280px; }
+  .paper{ grid-template-columns: 1fr; }
+  .paper-fig{ max-width: 280px; height: auto; }
+  .paper-fig img{ height: auto; }
 }
 
 /* ============================================================
