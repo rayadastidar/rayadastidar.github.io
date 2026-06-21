@@ -195,7 +195,7 @@ h1,h2,h3{ font-family: var(--serif); font-weight: 500; margin: 0; color: var(--p
 .section-head h2{ font-size: clamp(30px, 3.8vw, 42px); }
 
 section{ max-width: var(--max); margin: 0 auto; padding: 88px var(--pad); }
-section + section, .research, .projects, .split, .talks{ border-top: 1px solid var(--hairline); }
+section + section, .research, .projects, .service-section, .talks, .hobbies-section{ border-top: 1px solid var(--hairline); }
 
 /* ============================================================
    Research
@@ -271,29 +271,34 @@ section + section, .research, .projects, .split, .talks{ border-top: 1px solid v
 }
 
 /* ============================================================
-   Service + Hobbies split
+   Scientific Community Work
    ============================================================ */
-.split{
-  display: grid; grid-template-columns: 1.1fr .9fr; gap: 64px;
-}
 .service-list{
   margin: 0; padding-left: 22px; color: var(--paper-dim); font-size: 19px;
+  max-width: 72ch;
 }
 .service-list li{ margin-bottom: 14px; line-height: 1.55; }
 .service-list li::marker{ color: var(--ember); font-family: var(--mono); }
 
+/* ============================================================
+   Hobbies
+   ============================================================ */
+.hobbies-grid{
+  display: grid; grid-template-columns: 1fr 1.2fr; gap: 56px; align-items: center;
+}
 .hobbies-text{
   font-family: var(--serif); font-weight: 300; font-size: 21px; line-height: 1.6;
   color: var(--paper);
 }
 .hobbies-photo{
-  width: 100%; max-width: 360px; border-radius: 6px;
-  margin-top: 28px; display: block;
+  width: 100%; border-radius: 6px;
+  display: block;
   border: 1px solid var(--hairline);
 }
 
 @media (max-width: 800px){
-  .split{ grid-template-columns: 1fr; }
+  .hobbies-grid{ grid-template-columns: 1fr; }
+  .hobbies-photo{ max-width: 480px; }
 }
 
 /* ============================================================
